@@ -112,8 +112,9 @@ img{
 
 .form-container {
     width: 70vh; 
-    height: 80vh;
+    height: 75.5vh;
     padding: 1rem;
+    background-color: rgb(255,245,235);
 }
 
 .forms{
@@ -156,7 +157,7 @@ h1{
 	height: 55px;
 	width: 50%;
 	color: #fff;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	border: none;
 	margin: 30px auto 0 auto; /* Top: 30px, auto left & right */
 	cursor: pointer;
@@ -169,18 +170,25 @@ h1{
 
 
 .forms button:hover{
-	background-color: rgb(88m 56, 250);
+	background-color: olivedrab;
 }
 
 /* text */
 
 .text{
-    margin: 10px;
+    margin-left:90px;
+    margin-top: 10px;   
 }
 
-h4{
-    color: #D65A31;
+.text1{
+    margin-left:115px;
+    margin-top: 10px;   
 }
+
+
+ .link{
+    color:black;
+ }
 
 
 
