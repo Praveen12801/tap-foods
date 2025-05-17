@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restaurant Page</title>
     <link rel="icon" href="./assets/symbol.png" />
-    <link rel="stylesheet" href="style1.css" />
+
+    <!-- SWIPER-CSS -->
+     <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+    <link rel="stylesheet" href="css/style1.css" />
   </head>
   <body>
     <header>
@@ -28,14 +32,120 @@
           <div class="symbol-container">
             <img class="logo-symbol" src="assets/symbol.png" alt="logo image" />
           </div>
+          
+          
           <div class="text-container">
-            <p>TAP FOODS</p>
+            <div class="text-content-container">
+              <p>TAP FOODS</p>
 
-            <h1>TAP IT. TASTE IT. LOVE IT.</h1>
+              <h1>TAP IT. TASTE IT. LOVE IT.</h1>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
+    <div class="description">
+      <h2>
+        Get your Inspiration to order
+      </h2>
+
+    </div>
+
+    <div class="container-body">
+      <div class="slide-container swiper">
+        <div class="slide-content">
+          <div class="card-wrapper swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/Dosa.jpg" alt="" class="card-img" />
+                  <p class="description">Dosa</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/idli.jpg" alt="" class="card-img" />
+                  <p class="description">Idli</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/medu-vada.jpg" alt="" class="card-img" />
+                  <p class="description">Vada</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/biryani.jpg" alt="" class="card-img" />
+                  <p class="description">Biryani</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/coffee.jpg" alt="" class="card-img" />
+                  <p class="description">Coffee</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/sandwhich.jpg" alt="" class="card-img" />
+                  <p class="description">Sandwhich</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/cake.jpg" alt="" class="card-img" />
+                  <p class="description">Cake</p>
+                </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="image-content">
+                <span class="overlay"></span>
+
+                <div class="card-image">
+                  <img src="assets/salad.jpg" alt="" class="card-img" />
+                  <p class="description">Salad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-navbtn"></div>
+        <div class="swiper-button-prev swiper-navbtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+
+
+
 
     <!-- <div class="restaurant-card">
       <div class="image-container">
@@ -55,5 +165,12 @@
         </div>
       </div>
     </div> -->
+    
   </body>
+
+  <!-- SWIPER -->
+   <script src="js/swiper-bundle.min.js"></script>
+
+   <!-- JAVASCRIPT -->
+    <script src="js/scrpt.js"></script>
 </html>

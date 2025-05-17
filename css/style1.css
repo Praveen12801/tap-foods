@@ -35,7 +35,7 @@ body{
     height: 100%;
     width: 100%;
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.7;
     position: absolute;
     top: 0;
     left: 0;
@@ -83,36 +83,136 @@ body{
     box-sizing: border-box;
 }
 
+.symbol-container{
+  justify-content: center;
+  align-items: center;
+}
+
 .symbol-container,
 .text-container{
     flex: 1;
-    padding:20px;
+    padding:10px;
     box-sizing: border-box;
     text-align: center;
     cursor:default;
     
 }
 
-.logo-symbol{
-    
-    width: 40vh;
-    height: 40vh;
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-content-container{
+  display: block;
+  height: auto;
+  margin-right: 20%;
+}
+
+.logo-symbol{ 
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+    display: block;
     border-radius: 50%;
-    display: flex;
-    margin-left: 200px;
+    margin-left: 40%;
+    
 }
 
 .text-container p{
-    font-size: 100px;
+    font-size: 80px;
     color: white;
-    font-weight: 800;
-    text-wrap: wrap;
+    font-weight: 700;
 }
 
 .text-container h1{
     color: white;
 
 }
+
+/* DISHES-SLIDE-SHOW */
+
+.container-body{
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  background-color:white;
+  padding: 30px 0;
+}
+
+.slide-content{
+  margin: 0 40px;
+  padding: 38px 20px;
+
+}
+
+.card{
+  border-radius: 25px;
+  background-color: white;
+}
+
+
+.image-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 14px ;
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid grey;
+}
+
+.description{
+  display: flex;
+  justify-content: left;
+  font-size: 14px;
+  color: black;
+  padding: 15px;
+  margin-left: 40px;
+}
+
+.swiper-navbtn{
+  color: grey;
+}
+
+.swiper-navbtn:hover{
+  color:black;
+}
+
+.swiper-navbtn::before,
+.swiper-navbtn::after{
+  font-size: 30px;
+}
+
+.swiper-pagination-bullet{
+  background-color: grey;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+  background-color:darkgrey;
+}
+
 
 /* RESTAURANT-CARDS
 

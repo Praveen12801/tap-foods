@@ -8,14 +8,40 @@
   .signin__pic-container img {
     width: 90%;
   }
+}
 
-  .symbol-container{
-    flex-direction: column;
-    align-items: center;
+@media screen and (max-width: 768px) {
+
+  .logo-symbol {
+    display: none !important; 
   }
 
   .text-container{
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;         /* Stack logo + text vertically */
+    align-items: center;            /* Center items horizontally */
+    text-align: center;
   }
+
+  .symbol-container,
+  .text-container {
+    width: 100%;
+    padding: 10px 0;
+    height: auto;
+  }
+
+  .text-content-container {
+    max-width: 90%;
+    margin: 0 auto;
+    
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    .slide-content{
+      margin: 0 10px;
+    }
+    .swiper-navbtn{
+      display: none;
+    }
 }
