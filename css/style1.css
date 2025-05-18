@@ -146,12 +146,12 @@ body{
   max-width: 1120px;
   width: 100%;
   background-color:white;
-  padding: 30px 0;
+  padding: 20px 0;
 }
 
 .slide-content{
   margin: 0 40px;
-  padding: 38px 20px;
+  padding: 28px 20px;
 
 }
 
@@ -187,7 +187,7 @@ body{
   justify-content: left;
   font-size: 14px;
   color: black;
-  padding: 15px;
+  padding-top: 5px;
   margin-left: 40px;
 }
 
@@ -214,10 +214,30 @@ body{
 }
 
 
-/* RESTAURANT-CARDS
+/* SECTION */
+
+.restaurant-body{
+  padding: 40px 20px;
+  background-color: white;
+}
+
+.restaurant-container{
+  max-width: 1300px;      
+  margin: 0 auto;         
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;              
+  justify-content: center;
+  background-color: white;
+}
+
+
+
+
+/* RESTAURANT-CARDS */
 
 .restaurant-card {
-  width: 340px;
+  width: 300px;
   border: 1px solid #ddd;
   border-radius: 12px;
   overflow: hidden;
@@ -226,13 +246,13 @@ body{
   background: white;
 }
 
-.image-container {
+.card-image-container {
   position: relative;
   height: 200px;
   overflow: hidden;
 }
 
-.image-container img {
+.card-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -293,5 +313,6 @@ body{
   flex-direction: column;
   gap: 2px;
 }
- */
+
+
 
