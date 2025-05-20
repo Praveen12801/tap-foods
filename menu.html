@@ -5,47 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Hut menu</title>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="mediaquries.css">
 </head>
 <body>
     <header>
-        <nav id="desktop-nav">
-        <div class="logo">
-            <img src="assets/symbol.png" alt="nav-logo-images"/>
-            <p>TAP FOODS</p>
-
-        </div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="Sign-up.html">Sign Up</a></li>
-                <li><a href="#Help">Help</a></li>
-                <li><a href="#Contact">Contact</a></li>
-            </ul>    
-        </div>
+    <nav id="desktop-nav">
+      <div class="logo" role="banner">
+        <img src="assets/symbol.png" alt="TAP FOODS logo" />
+        <p>TAP FOODS</p>
+      </div>
+      <div>
+        <ul class="nav-links" role="navigation" aria-label="Primary navigation">
+          <li><a href="Sign-up.html">Sign Up</a></li>
+          <li><a href="#Help">Help</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>    
+      </div>
     </nav>
-    </header>
+  </header>
 
-    <section class="section-container">
-        <div class="title-container">
-            <div class="title-img">
-                <img src="assets/restaurant-images/restaurant-3.jpg" alt="resturant-image"/>
-            </div>
-            <div class="restaurant-details">
-          <div class="top-row">
-            <h3 class="name">Pizza Hut</h3>
-            <div class="rating">4.2★</div>
-          </div>
-          <p class="cuisine">Italian, Veg and Non-veg</p>
-          <div class="info-row">
-            <span class="price">₹99-₹500</span>
-            <span class="location">Jallahalli cross, Bangalore</span>
-            <span class="distance">394 m</span>
-          </div>
+  <section class="content-container" role="main">
+    <div class="info-container">
+      <h1>Restaurant Info</h1>
+      <div class="content-row">
+        <div class="image-container">
+          <img src="assets/restaurant-images/restaurant-3.jpg" alt="Pizza Hut restaurant" />
+          <div class="rating-tag">4.5</div>
         </div>
+        <div class="details-container">
+          <h3>Pizza Hut</h3>
+          <p>Italian-American, Indian</p>
+          <p>Starts from ₹99 - ₹500</p>
+          <p>Jalahalli, Bangalore</p>
+          <p>40-45 mins</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
 
-
-
-
-    </section>
         
 </body>
 </html>

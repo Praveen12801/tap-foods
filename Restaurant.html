@@ -189,7 +189,15 @@
           </div>
         </div>
         </div>
-
+      
+      <div class="restaurant-card" onclick="openMenu('Pizza Hut')"
+        data-name="Pizza Hut"
+        data-rating="4.2★"
+        data-cuisine="Italian, Veg and Non-veg"
+        data-price="₹99-₹500"
+        data-location="Jallahalli cross, Bangalore"
+        data-distance="394 m"
+        data-image="assets/restaurant-images/restaurant-3.jpg">
         <div class="restaurant-card">
         <div class="card-image-container">
           <img src="assets/restaurant-images/restaurant-3.jpg" alt="Restaurant Image" />
@@ -208,6 +216,7 @@
           </div>
         </div>
         </div>
+      </div>
 
         <div class="restaurant-card">
         <div class="card-image-container">
@@ -228,6 +237,15 @@
         </div>
         </div>
 
+
+      <div class="restaurant-card" onclick="openMenu('Biryani House')"
+        data-name="Biryani House"
+        data-rating="4.2★"
+        data-cuisine="North Indian, Chinese, Sushi"
+        data-price="₹2,700 for two"
+        data-location="Lavelle Road, Bangalore"
+        data-distance="494 m"
+        data-image="assets/restaurant-images/restaurant-5.jpg">  
         <div class="restaurant-card">
         <div class="card-image-container">
           <img src="assets/restaurant-images/restaurant-5.jpg" alt="Restaurant Image" />
@@ -246,6 +264,7 @@
           </div>
         </div>
         </div>
+      </div>  
 
         <div class="restaurant-card">
         <div class="card-image-container">
@@ -458,6 +477,28 @@
       </div>
 
     </section>
+
+     <script>
+    function openMenu(name) {
+      const card = [...document.querySelectorAll(".restaurant-card")].find(el =>
+        el.getAttribute("data-name") === name
+      );
+      const restaurant = {
+        name: card.dataset.name,
+        rating: card.dataset.rating,
+        cuisine: card.dataset.cuisine,
+        price: card.dataset.price,
+        location: card.dataset.location,
+        distance: card.dataset.distance,
+        image: card.dataset.image,
+      };
+      localStorage.setItem("selectedRestaurant", JSON.stringify(restaurant));
+      window.location.href = "menu.html";
+    }
+  </script>
+
+
+    
 
     
   </body>
