@@ -6,6 +6,7 @@
     <title>Pizza Hut menu</title>
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="mediaquries.css">
+    <link rel="javascript" href="js/scrpt.js">
 </head>
 <body>
     <header>
@@ -26,7 +27,7 @@
 
   <section class="content-container" role="main">
     <div class="info-container">
-      <h1>Restaurant Info</h1>
+      <h2>Restaurant Info</h2>
       <div class="content-row">
         <div class="image-container">
           <img src="assets/restaurant-images/restaurant-3.jpg" alt="Pizza Hut restaurant" />
@@ -42,6 +43,528 @@
       </div>
     </div>
   </section>
+
+  <section class="menu-container">
+  <div class="menu-content" data-item="Veggie Feast">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Veggie Feast</h2>
+      <p class="price">₹ 259</p>
+      <p class="description">
+        Serves 1 | Herbed onion and green capsicum, juicy sweet corn &amp; 100% mozzarella cheese with flavourful pan sauce.
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/veggiefeast.png" alt="Veggie Feast" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Tandoori-Paneer">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Tandoori Paneer</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        It's our signature. Spiced paneer, crunchy onions & green capsicum, 
+        spicy red paprika with delicious tandoori sauce and 100% mozzarella cheese! 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/tandooripaneer.png" alt="Tandoori Paneer" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Corn-&-Cheese">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Corn & Cheese</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        A combination of juicy sweet corn & 100% mozzarella cheese with flavourful signature pan sauce. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/cheesecorn.png" alt="Cheesecorn" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Chicken-sausage">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Non-Vegetarian">
+        <span class="non-veg-icon" aria-label="Non-Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Chicken Sausage</h2>
+      <p class="price">₹ 259</p>
+      <p class="description">
+        Pizza topped with chicken n cheese sausages & crunchy onions, flavourful pan sauce and 100% mozzarella cheese. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/chickensausage.png" alt="Chicken Sausage" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Murg-Malai-Chicken">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Non-Vegetarian">
+        <span class="non-veg-icon" aria-label="Non-Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Murg Malai Chicken</h2>
+      <p class="price">₹ 379</p>
+      <p class="description">
+        Amazingly flavourful chicken malai tikka, herbed onion & green capsicum, 
+        spicy red paprika with flavourful pan sauce and 100% mozzarella cheese. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/murgchicken.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Chicken-Supreme">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Non-Vegetarian">
+        <span class="non-veg-icon" aria-label="Non-Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Chicken Supreme</h2>
+      <p class="price">₹ 409</p>
+      <p class="description">
+         Loaded with delicious chicken tikka, flavourful herbed chicken, 
+         spicy schezwan chicken meatball with flavourful pan sauce and 100% mozzarella cheese. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/menu-images/chickensupreme.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+  
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+  <div class="menu-content" data-item="Margherita">
+    <div class="menu-info-container">
+      <div class="icon-wrapper" title="Vegetarian">
+        <span class="veg-icon" aria-label="Vegetarian food icon"></span>
+      </div>
+      <h2 class="title">Margherita</h2>
+      <p class="price">₹ 169</p>
+      <p class="description">
+        Pizza topped with our herb-infused signature pan sauce and 100% mozzarella cheese.
+        A classic treat for all cheese lovers out there!
+        Contains Cereals containing Gluten (Wheat), Soya and Milk &amp; Milk Products. 
+      </p>
+    </div>
+    <div class="images-container">
+      <img src="assets/Margarhita.png" alt="Margherita" />
+      <div class="quantity-controls">
+        <button class="decrease-button" aria-label="Decrease quantity">-</button>
+        <span class="quantity">1</span>
+        <button class="increase-button" aria-label="Increase quantity">+</button>
+      </div>
+      <button class="add-button">ADD</button>
+    </div>
+  </div>
+
+</section>
 </body>
 </html>
 
