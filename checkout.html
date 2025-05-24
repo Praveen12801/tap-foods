@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="mediaquries.css">
+    <link rel="javascript" href="js/cart.js">
+</head>
+<body>
+    <header>
+    <nav id="desktop-nav">
+      <div class="logo" role="banner">
+        <img src="assets/symbol.png" alt="TAP FOODS logo" />
+        <p>TAP FOODS</p>
+      </div>
+      <div>
+        <ul class="nav-links" role="navigation" aria-label="Primary navigation">
+          <li><a href="Sign-up.html">Sign Up</a></li>
+          <li><a href="#Help">Help</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>    
+      </div>
+    </nav>
+  </header>
+
+  <section class="checkout-section">
+    <div class="checkout-container">
+        <h2>Checkout</h2>
+        <form id="checkoutForm" novalidate>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +1234567890" pattern="^\+?[0-9\s\-]{7,15}$" required />
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" placeholder="Delivery address" required></textarea>
+
+        <label for="paymentMode">Payment Mode</label>
+        <select id="paymentMode" name="paymentMode" required>
+            <option value="">Select payment mode</option>
+            <option value="COD">Cash On Delivery (COD)</option>
+            <option value="UPI">UPI</option>
+            <option value="Card">Card</option>
+        </select>
+
+        <button type="submit">Place Order</button>
+        </form>
+        <div class="message" id="message"></div>
+    </div>
+  </section>  
+</body>
+</html>
+
+<script src="js/checkout.js"></script>
