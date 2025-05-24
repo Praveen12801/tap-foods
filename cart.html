@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="mediaquries.css">
+    <link rel="javascript" href="js/cart.js">
+</head>
+<body>
+    <header>
+    <nav id="desktop-nav">
+      <div class="logo" role="banner">
+        <img src="assets/symbol.png" alt="TAP FOODS logo" />
+        <p>TAP FOODS</p>
+      </div>
+      <div>
+        <ul class="nav-links" role="navigation" aria-label="Primary navigation">
+          <li><a href="Sign-up.html">Sign Up</a></li>
+          <li><a href="#Help">Help</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>    
+      </div>
+    </nav>
+  </header>
+
+  <h1>Your Shopping Cart</h1>
+    <table aria-label="Shopping cart items">
+      <thead>
+        <tr>
+          <th scope="col">Dish</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Remove</th>
+        </tr>
+      </thead>
+      <tbody id="cart-items">
+        <!-- Cart items inserted by JavaScript -->
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4" class="total-row" scope="row">Total:</td>
+          <td class="total-row" id="total-price" aria-live="polite">$0.00</td>
+        </tr>
+      </tfoot>
+    </table>
+    <div class="actions">
+      <button class="action-btn" id="add-items-btn" type="button" aria-label="Add more items to cart">Add More Items</button>
+      <button class="action-btn" id="checkout-btn" type="button" aria-label="Proceed to checkout">Proceed to Checkout</button>
+    </div>
+  </div>
+  </body>
+</html>
+
+<script type="module" src="js/cart.js"></script>
