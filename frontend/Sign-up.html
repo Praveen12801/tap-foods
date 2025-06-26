@@ -29,8 +29,8 @@
                         <h1>Sign Up</h1>
 
                         <div class="input-box">
-                            <!-- <label>User Name</label> -->
-                            <input type="text" id="check" placeholder="enter your username" required/>
+                            <!-- <label>Name</label> -->
+                            <input type="text" id="check" placeholder="enter your name" required/>
                         </div>
 
                         <div class="input-box">
@@ -44,13 +44,17 @@
                         </div>
 
                         <div class="input-box">
-                            <!-- <label>Password</label> -->
-                            <input type="text" id="check" placeholder="enter password" required/>
+                            <!-- <label for="check">Role</label> -->
+                            <select id="check" required>
+                                <option value="" disabled selected>Select Role</option>
+                                <option value="Customer">Customer</option>
+                                <option value="Admin">Admin</option>
+                            </select>
                         </div>
 
                         <div class="input-box">
-                            <!-- <label>Confirm Password</label> -->
-                            <input type="text" id="check" placeholder="confirm password" required/>
+                            <!-- <label>Password</label> -->
+                            <input type="text" id="check" placeholder="password" required/>
                         </div>
 
                         <button href="Sign-in.html">Register</button>
