@@ -98,6 +98,8 @@
         qtyControls.appendChild(plusBtn);
         qtyTd.appendChild(qtyControls);
         tr.appendChild(qtyTd);
+
+        
         // Remove button cell
         const removeTd = document.createElement('td');
         removeTd.setAttribute('data-label', 'Remove');
